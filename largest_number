@@ -1,0 +1,45 @@
+"""Given an integer n, return the largest number that contains 
+exactly n digits.
+
+For n = 2, the output should be solution(n) = 99. """
+# =================== Approach ======================= #
+#
+# I'm going to initalize an empty string (this approach was easier for me)
+# 
+# I interated through the range of n (let's say numbers)
+#
+# for every number increase, I will add 99 
+# (99 will always be the biggest number of those digits before it
+# increases)
+#
+# then, i'll return the string as an integer.
+#
+# ==================== Solution ====================== #
+
+def solution(n):
+    
+    new_str = ""
+    
+    for num in range(n):     # num didn't need to be accessed at this point.
+        new_str += "9"       # if I did this again, I would find a way not to waste it.
+
+        
+    return(int(new_str))
+
+
+    
+# ==================== Test Cases ==================== #
+
+print(solution(2))
+
+# output: solution(n) = 11
+
+print(solution(3))
+
+# output: solution(n) = 15
+
+print(solution(4))
+
+# Output: solution(n) = 7
+
+# ==================================================== #
